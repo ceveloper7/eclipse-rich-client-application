@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_fhmpgB1WEfGlM8c1CKE3tA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_1iLIQB1XEfGlM8c1CKE3tA" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_LRsIsB1YEfGlM8c1CKE3tA" elementId="com.gba.contribute.parts.partdescriptor.additionalinfo" label="Aditional info" category="gba" closeable="true" contributionURI="bundleclass://com.gba.contribute.parts/com.gba.contribute.parts.AdditionalInformationPart"/>
+  </fragments>
+</fragment:ModelFragments>
