@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_uw4uMBz1EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.application">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_BTaOMBz2EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.trimmedwindow.taskmanager" label="Task Manager" width="800" height="1024">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_BTaOMBz2EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.trimmedwindow.taskmanager" label="Task Manager" x="100" y="100" width="600" height="400">
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_kLKlUBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partsashcontainer.main" horizontal="true">
       <children xsi:type="basic:PartStack" xmi:id="_vZb0kBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partstack.0">
         <children xsi:type="basic:Part" xmi:id="_KdHdUBz5EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.part.overview" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.TodoOverviewPart" label="Overview"/>
@@ -11,7 +12,7 @@
         </children>
         <children xsi:type="basic:PartStack" xmi:id="_2w3VIBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partstack.2">
           <children xsi:type="basic:Part" xmi:id="_LpqI8Bz5EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.part.playground" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.PlaygroundPart" label="Playground"/>
-          <children xsi:type="basic:Part" xmi:id="_jd098B2XEfGlM8c1CKE3tA" elementId="com.gba.tasks.ui.part.example" label="Example"/>
+          <children xsi:type="basic:Part" xmi:id="_jd098B2XEfGlM8c1CKE3tA" elementId="com.gba.tasks.ui.part.example" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.ExamplePart" label="Example"/>
         </children>
       </children>
     </children>

@@ -13,7 +13,6 @@
       </vmArgsMac>
    </launcherArgs>
 
-
    <launcher name="Taskman">
       <win useIco="false">
          <bmp/>
@@ -24,6 +23,8 @@
    </vm>
 
    <plugins>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.ecore"/>
    </plugins>
 
    <features>

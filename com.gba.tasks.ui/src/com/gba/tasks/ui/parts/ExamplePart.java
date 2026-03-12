@@ -1,8 +1,8 @@
 package com.gba.tasks.ui.parts;
 
-public class PlaygroundPart {
+public class ExamplePart {
 	
-	public PlaygroundPart() {
+	public ExamplePart() {
 		System.out.println(this.getClass().getSimpleName());
 	}
 }
