@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_uw4uMBz1EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.application">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_uw4uMBz1EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.application">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_BTaOMBz2EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.trimmedwindow.taskmanager" label="Task Manager" x="100" y="100" width="600" height="400">
     <tags>shellMaximized</tags>
-    <children xsi:type="basic:PartSashContainer" xmi:id="_kLKlUBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partsashcontainer.main" horizontal="true">
-      <children xsi:type="basic:PartStack" xmi:id="_vZb0kBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partstack.0">
-        <children xsi:type="basic:Part" xmi:id="_KdHdUBz5EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.part.overview" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.TodoOverviewPart" label="Overview"/>
-      </children>
-      <children xsi:type="basic:PartSashContainer" xmi:id="_z-QqoBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partsashcontainer.0" containerData="6000">
-        <children xsi:type="basic:PartStack" xmi:id="_1_lpMBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partstack.1">
-          <children xsi:type="basic:Part" xmi:id="_LEfmYBz5EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.part.details" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.TodoDetailsPart" label="Details"/>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_MDXcMB4nEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_n_HVYB4nEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.perspective" label="To-Do">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Gf3h8B4oEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.partsashcontainer.main" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_emI-YB4oEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_2Jod4B4oEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.part.todooverview" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.TodoOverviewPart" label="To-Dos"/>
+          </children>
         </children>
-        <children xsi:type="basic:PartStack" xmi:id="_2w3VIBz4EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.partstack.2">
-          <children xsi:type="basic:Part" xmi:id="_LpqI8Bz5EfGvTrgJPH4n1Q" elementId="com.gba.tasks.ui.part.playground" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.PlaygroundPart" label="Playground"/>
-          <children xsi:type="basic:Part" xmi:id="_jd098B2XEfGlM8c1CKE3tA" elementId="com.gba.tasks.ui.part.example" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.ExamplePart" label="Example"/>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_mcAHYB4oEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.partsashcontainer.0">
+          <children xsi:type="basic:PartStack" xmi:id="_n4prkB4oEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.partstack.1">
+            <children xsi:type="basic:Part" xmi:id="_JNPRsB4pEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.part.tododetails" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.TodoDetailsPart" label="Details"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_pKpe8B4oEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.partstack.2">
+            <children xsi:type="basic:Part" xmi:id="_OzDDoB4pEfGjRZyOMmfMQg" elementId="com.gba.tasks.ui.part.todoplayground" contributionURI="bundleclass://com.gba.tasks.ui/com.gba.tasks.ui.parts.PlaygroundPart" label="Playground"/>
+          </children>
         </children>
       </children>
     </children>

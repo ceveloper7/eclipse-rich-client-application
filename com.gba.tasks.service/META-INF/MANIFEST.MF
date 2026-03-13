@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Service
+Bundle-SymbolicName: com.gba.tasks.service
+Bundle-Version: 1.0.0.qualifier
+Import-Package: com.gba.tasks.model
+Bundle-Vendor: GBA
+Automatic-Module-Name: com.gba.tasks.service
+Bundle-RequiredExecutionEnvironment: JavaSE-21
