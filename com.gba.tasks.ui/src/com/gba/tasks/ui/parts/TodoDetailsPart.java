@@ -12,6 +12,6 @@ public class TodoDetailsPart {
 	
 	@PostConstruct
 	public void createControls(Composite parent) {
-	System.out.println(this.getClass().getSimpleName() 	+ " @PostConstruct method called.");
+		//System.out.println(this.getClass().getSimpleName() 	+ " @PostConstruct method called.");
 	}
 }

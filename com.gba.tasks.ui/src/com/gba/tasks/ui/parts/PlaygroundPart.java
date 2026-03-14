@@ -13,11 +13,11 @@ public class PlaygroundPart {
 	
 	@PostConstruct
 	public void createControls(Composite parent) {
-	System.out.println(this.getClass().getSimpleName() 	+ " @PostConstruct method called.");
+		//System.out.println(this.getClass().getSimpleName() 	+ " @PostConstruct method called.");
 	}
 	
 	@Focus
 	private void setFocus() {
-		System.out.println( this.getClass().getSimpleName() + "  @Focus method called");
+		//System.out.println( this.getClass().getSimpleName() + "  @Focus method called");
 	}
 }
