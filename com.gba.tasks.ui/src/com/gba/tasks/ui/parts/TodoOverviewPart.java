@@ -17,44 +17,47 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
 
 public class TodoOverviewPart {
-	
+
+	private static final String NUMBER_OF_TODO_ITEMS = "Number of Todo items: ";
+	private Button btnLoadData;
+	private Label lblNumberOfTodo;
+
 	// TodoOverview depende de una implementacion de ITodoService
 	// La dependencia se puede mejorar con OSGi service
-	//private ITodoService todoService = TodoServiceFactory.getInstance();
-	
+	// private ITodoService todoService = TodoServiceFactory.getInstance();
+
 	@Inject
 	public TodoOverviewPart(Composite parent) {
-		//System.out.println("Woh! got a  Composite	via DI");
-		//System.out.println("Layout: " + parent.getLayout().getClass().getName());
+		// System.out.println("Woh! got a Composite via DI");
+		// System.out.println("Layout: " + parent.getLayout().getClass().getName());
 	}
-	
+
 	// OSGi service is injecting
 	@PostConstruct
 	public void createControls(Composite parent, ITodoService todoService) {
-		parent.setLayout(new GridLayout(3, false));
-		
-		
-		
-		Button btnData = new Button(parent, SWT.NONE);
-		
-		btnData.setText("Load data");
-		//new Label(parent, SWT.NONE);
-		Label lblData = new Label(parent, SWT.NONE);
-		GridData gd_lblData = new GridData(SWT.LEFT, SWT.CENTER, false, false, 2, 1);
-		gd_lblData.widthHint = 293;
-		lblData.setLayoutData(gd_lblData);
-		lblData.setText("New Label");
-		
-		btnData.addSelectionListener(new SelectionAdapter() {
+
+		parent.setLayout(new GridLayout(2, false));
+		btnLoadData = new Button(parent, SWT.PUSH);
+		btnLoadData.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				lblData.setText("Number of Todos objects " + todoService.getTodos().size());
+				lblNumberOfTodo.setText(NUMBER_OF_TODO_ITEMS + todoService.getTodos().size());
 			}
 		});
-		
-		// System.out.println(this.getClass().getSimpleName() 	+ " @PostConstruct method called.");
-		
-		//System.out.println("Number of Todo Objects   " + todoService.getTodos().size());
+		btnLoadData.setText("Load Data");
+		lblNumberOfTodo = new Label(parent, SWT.NONE);
+		lblNumberOfTodo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		lblNumberOfTodo.setText("Data not available.");
+
+		// System.out.println(this.getClass().getSimpleName() + " @PostConstruct method
+		// called.");
+
+		// System.out.println("Number of Todo Objects " +
+		// todoService.getTodos().size());
+	}
+
+	@Focus
+	public void setFocus() {
+		btnLoadData.setFocus();
 	}
 }
-
