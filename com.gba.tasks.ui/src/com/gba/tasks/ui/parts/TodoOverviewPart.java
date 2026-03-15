@@ -13,7 +13,7 @@ public class TodoOverviewPart {
 	
 	// TodoOverview depende de una implementacion de ITodoService
 	// La dependencia se puede mejorar con OSGi service
-	private ITodoService todoService = TodoServiceFactory.getInstance();
+	//private ITodoService todoService = TodoServiceFactory.getInstance();
 	
 	@Inject
 	public TodoOverviewPart(Composite parent) {
@@ -21,8 +21,9 @@ public class TodoOverviewPart {
 		//System.out.println("Layout: " + parent.getLayout().getClass().getName());
 	}
 	
+	// OSGi service is injecting
 	@PostConstruct
-	public void createControls(Composite parent) {
+	public void createControls(Composite parent, ITodoService todoService) {
 		// System.out.println(this.getClass().getSimpleName() 	+ " @PostConstruct method called.");
 		
 		System.out.println("Number of Todo Objects   " + todoService.getTodos().size());

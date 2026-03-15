@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- hay un componente llamado ITodoService que provee un servicio al service register de OSGI para la interface ITodoService, el componente
+		es implementado por la clase MyTodoServiceImpl-->
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ITodoService">
+   <implementation class="com.gba.tasks.service.internal.MyTodoServiceImpl"/>
+   <service>
+      <provide interface="com.gba.tasks.model.ITodoService"/>
+   </service>
+</scr:component>

@@ -5,6 +5,8 @@ import com.gba.tasks.service.internal.MyTodoServiceImpl;
 
 /**
  * Factory provides access to the Todo service provider (ITodoService)
+ * Una vez que se implemento OSGi service ya no es necesaria esta clase.
+ * La injeccion de dependencia la realiza OSGi por medio del archivo component.xml
  */
 
 public class TodoServiceFactory {
